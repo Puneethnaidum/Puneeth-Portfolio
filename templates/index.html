@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puneeth Naidu | AI/ML Engineer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <img src="{{ url_for('static', filename='puneethNaidu.jpg') }}"
+             alt="Puneeth Naidu"
+             class="profile-pic">
+
+        <h1>Puneeth Naidu</h1>
+
+        <p class="subtitle">
+            AI/ML Engineer | Generative AI | LLMs | RAG | NLP | Computer Vision
+        </p>
+
+        <p class="hero-text">
+            Building intelligent AI systems using Machine Learning, Deep Learning,
+            Generative AI, Retrieval-Augmented Generation, FastAPI, AWS, and Data Engineering.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="https://github.com/Puneethnaidum" target="_blank" class="btn">GitHub</a>
+
+            <a href="https://www.linkedin.com/in/mullaguri-puneeth-naidu/" target="_blank" class="btn">LinkedIn</a>
+
+            <a href="mailto:Mullaguripuneethnaidu@gmail.com" class="btn">Contact Me</a>
+
+            <a href="{{ url_for('static', filename='resume.pdf') }}" download class="btn">Download Resume</a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="stats">
+        <div class="stat-card">
+            <h2>MS</h2>
+            <p>Computer Science</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>4+</h2>
+            <p>AI Projects</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>10+</h2>
+            <p>AI Technologies</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>500+</h2>
+            <p>LinkedIn Connections</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p>
+            I am an AI/ML Engineer with a Master of Science in Computer Science
+            from DePaul University. My interests include Machine Learning,
+            Deep Learning, Large Language Models, Retrieval-Augmented Generation,
+            NLP, Computer Vision, and MLOps.
+        </p>
+
+        <p>
+            I enjoy building production-ready AI applications that solve real-world
+            business problems using modern cloud technologies, scalable architectures,
+            and data-driven solutions.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+
+        <div class="skills-grid">
+            <span>Python</span>
+            <span>SQL</span>
+            <span>TensorFlow</span>
+            <span>PyTorch</span>
+            <span>Scikit-Learn</span>
+            <span>FastAPI</span>
+            <span>LangChain</span>
+            <span>FAISS</span>
+            <span>AWS SageMaker</span>
+            <span>PySpark</span>
+            <span>Docker</span>
+            <span>MongoDB</span>
+            <span>MLflow</span>
+            <span>OpenCV</span>
+            <span>Power BI</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="card">
+            <h3>AI Resume Screening System</h3>
+            <p><strong>Tech:</strong> Python, FastAPI, NLP, Generative AI</p>
+            <p>
+                Built an AI-powered resume screening system with ATS-style matching,
+                skill extraction, candidate ranking, and interview question generation.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Local RAG Chatbot</h3>
+            <p><strong>Tech:</strong> LangChain, FAISS, Ollama, Python</p>
+            <p>
+                Developed a Retrieval-Augmented Generation chatbot that supports
+                document ingestion, vector embeddings, semantic search, and contextual answers.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Movie Recommendation System</h3>
+            <p><strong>Tech:</strong> Python, TF-IDF, Cosine Similarity, Scikit-Learn</p>
+            <p>
+                Created a content-based recommendation system using TF-IDF indexing
+                and cosine similarity to retrieve and recommend relevant movies.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Face Mask Detection System</h3>
+            <p><strong>Tech:</strong> TensorFlow, Keras, OpenCV, CNN</p>
+            <p>
+                Built a deep learning computer vision system for real-time face mask
+                detection using convolutional neural networks and OpenCV.
+            </p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+
+        <div class="card">
+            <h3>AI/ML Engineer | AIM BIG SOLUTIONS</h3>
+            <p>
+                Developed healthcare predictive analytics solutions, built patient risk
+                prediction models, deployed ML models on AWS SageMaker, and created
+                FastAPI-based inference APIs.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Software Engineer | LTTS</h3>
+            <p>
+                Built PySpark data pipelines, ETL workflows, SQL optimizations,
+                feature engineering pipelines, and distributed analytics solutions
+                for large-scale industrial data.
+            </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+
+        <p>
+            <strong>Master of Science in Computer Science</strong><br>
+            DePaul University, Chicago, Illinois<br>
+            Graduated: June 2025
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <p>📧 Email:
+            <a href="mailto:Mullaguripuneethnaidu@gmail.com">
+                Mullaguripuneethnaidu@gmail.com
+            </a>
+        </p>
+
+        <p>💻 GitHub:
+            <a href="https://github.com/Puneethnaidum" target="_blank">
+                github.com/Puneethnaidum
+            </a>
+        </p>
+
+        <p>🔗 LinkedIn:
+            <a href="https://www.linkedin.com/in/mullaguri-puneeth-naidu/" target="_blank">
+                linkedin.com/in/mullaguri-puneeth-naidu
+            </a>
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Puneeth Naidu | AI/ML Engineer</p>
+    </footer>
+
+</body>
+
+</html>
