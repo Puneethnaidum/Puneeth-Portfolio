@@ -15,7 +15,19 @@ body {
     line-height: 1.7;
 }
 
-/* HERO SECTION */
+.theme-toggle {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    padding: 12px 18px;
+    background: #38bdf8;
+    color: #000;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
 header {
     text-align: center;
@@ -57,15 +69,13 @@ header h1 {
     font-size: 18px;
 }
 
-/* BUTTONS */
-
 .hero-buttons {
     margin-top: 30px;
 }
 
 .btn {
     display: inline-block;
-    padding: 14px 28px;
+    padding: 12px 25px;
     margin: 10px;
     background: #38bdf8;
     color: #000;
@@ -75,12 +85,11 @@ header h1 {
     transition: all 0.3s ease;
 }
 
-.btn:hover {
+.btn:hover,
+button:hover {
     background: #7dd3fc;
     transform: translateY(-4px);
 }
-
-/* NAVIGATION */
 
 nav {
     background: #020617;
@@ -103,8 +112,6 @@ nav a:hover {
     color: #38bdf8;
 }
 
-/* SECTION */
-
 section {
     width: 85%;
     margin: 30px auto;
@@ -119,11 +126,14 @@ h2 {
     font-size: 32px;
 }
 
+h3 {
+    color: #93c5fd;
+    margin-bottom: 10px;
+}
+
 p {
     font-size: 17px;
 }
-
-/* STATS */
 
 .stats {
     width: 92%;
@@ -143,7 +153,9 @@ p {
     transition: 0.3s;
 }
 
-.stat-card:hover {
+.stat-card:hover,
+.card:hover,
+.tech-card:hover {
     transform: translateY(-5px);
     box-shadow: 0px 10px 25px rgba(56, 189, 248, 0.25);
 }
@@ -154,15 +166,15 @@ p {
     margin-bottom: 10px;
 }
 
-/* SKILLS */
-
-.skills-grid {
+.skills-grid,
+.tech-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
 
-.skills-grid span {
+.skills-grid span,
+.tech-card {
     background: #334155;
     padding: 15px;
     border-radius: 8px;
@@ -175,7 +187,9 @@ p {
     background: #475569;
 }
 
-/* PROJECTS & EXPERIENCE */
+.tech-card {
+    font-size: 18px;
+}
 
 .card {
     background: #334155;
@@ -186,18 +200,6 @@ p {
     transition: 0.3s;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 10px 25px rgba(56, 189, 248, 0.25);
-}
-
-.card h3 {
-    color: #93c5fd;
-    margin-bottom: 10px;
-}
-
-/* LINKS */
-
 a {
     color: #38bdf8;
 }
@@ -206,13 +208,49 @@ a:hover {
     color: #7dd3fc;
 }
 
-/* CONTACT */
-
 #contact p {
     margin-bottom: 10px;
 }
 
-/* FOOTER */
+.contact-form-box {
+    margin-top: 30px;
+    background: #334155;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.contact-form-box input,
+.contact-form-box textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.contact-form-box textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 14px 28px;
+    background: #38bdf8;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.success-message {
+    background: #064e3b;
+    color: #d1fae5;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
 
 footer {
     text-align: center;
@@ -221,10 +259,51 @@ footer {
     background: #020617;
 }
 
-/* MOBILE */
+/* LIGHT MODE */
+
+body.light-mode {
+    background: #f8fafc;
+    color: #111827;
+}
+
+body.light-mode header {
+    background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+}
+
+body.light-mode nav,
+body.light-mode footer {
+    background: #e2e8f0;
+}
+
+body.light-mode nav a {
+    color: #111827;
+}
+
+body.light-mode section,
+body.light-mode .stat-card {
+    background: #ffffff;
+    color: #111827;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode .card,
+body.light-mode .tech-card,
+body.light-mode .skills-grid span,
+body.light-mode .contact-form-box {
+    background: #e2e8f0;
+    color: #111827;
+}
+
+body.light-mode .hero-text {
+    color: #334155;
+}
+
+body.light-mode .theme-toggle {
+    background: #0f172a;
+    color: #ffffff;
+}
 
 @media (max-width: 768px) {
-
     header h1 {
         font-size: 40px;
     }
@@ -238,11 +317,9 @@ footer {
         height: 180px;
     }
 
-    .stats {
-        grid-template-columns: 1fr;
-    }
-
-    .skills-grid {
+    .stats,
+    .skills-grid,
+    .tech-grid {
         grid-template-columns: 1fr;
     }
 
@@ -260,5 +337,10 @@ footer {
         display: block;
         width: 250px;
         margin: 10px auto;
+    }
+
+    .theme-toggle {
+        right: 15px;
+        bottom: 15px;
     }
 }
